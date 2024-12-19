@@ -2,7 +2,19 @@
 // footer
 
 
+
+
 window.addEventListener('DOMContentLoaded',()=>{
+
+
+  const nmeText = document.getElementById('nme-text')
+  const chooseYourText = document.getElementById('choose-your')
+
+  setTimeout(() => {
+    nmeText.style.display = 'none';
+    chooseYourText.style.display = 'block'
+  }, 5000);
+
   
   const footer = document.getElementById('footer')
   const imageId = document.getElementById('logo')

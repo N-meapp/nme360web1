@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 
 
+
 // change navbar color
 
 window.addEventListener("scroll", () => {

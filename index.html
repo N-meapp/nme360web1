@@ -17,10 +17,11 @@
     ></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/threejs-components@0.0.5/build/backgrounds/spheres1.cdn.min.js"></script> -->
 
-        <!-- icon cdn -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
@@ -38,28 +39,40 @@
       rel="stylesheet"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-black">
     <!-- navbar -->
     <div
       id="nav-bar"
-      class="fixed top-0 w-full z-20 flex justify-between px-8 md:px-20"
+      class="fixed top-0 w-full z-20 flex justify-between sm:px-8 md:px-20 px-[1rem]"
     >
       <div>
-        <img id="logo"
-          class="w-20 md:w-28 transition-all"
+        <img
+          id="logo"
+          class="w-24 md:w-28 transition-all"
           src="./assets/images/N-ME 360 LOGO WHITE PNG.png"
         />
       </div>
 
       <div onclick="handleNavbar()" class="content-center cursor-pointer">
-        <div id="colapse1" class="h-[2px] rounded w-8 bg-white mb-2"></div>
-        <div id="colapse2" class="h-[2px] rounded w-8 bg-white mb-2"></div>
-        <div id="colapse3" class="h-[2px] rounded w-10 bg-white mb-2"></div>
+        <div
+          id="colapse1"
+          class="h-[2px] rounded sm:w-8 w-[1.5rem] bg-white mb-2"
+        ></div>
+        <div
+          id="colapse2"
+          class="h-[2px] rounded sm:w-8 w-[1.5rem] bg-white mb-2"
+        ></div>
+        <div
+          id="colapse3"
+          class="h-[2px] rounded sm:w-10 w-[2rem] bg-white mb-2"
+        ></div>
       </div>
     </div>
 
@@ -67,8 +80,11 @@
       id="nav-expand"
       class="w-full bg-black fixed opacity-0 z-10 navExpand h-[100vh] mt-[-100vh]"
     >
-      <div id="nav-main-tab" class="h-0 w-full flex navExpand mt-40 px-20 h-fit justify-center">
-        <div class="w-3/4 text-white mb">
+      <div
+        id="nav-main-tab"
+        class="h-0 w-full flex navExpand mt-40 sm:px-20 h-fit justify-center"
+      >
+        <div class="sm:w-3/4 text-white mb w-full">
           <a href="index.html">
             <div class="w-full h-0 mb-10 h-16 nav-tabs cursor-pointer">
               <h1 class="font-bold">Home</h1>
@@ -101,6 +117,7 @@
 
     <div class="each-section w-full bg-[black] homepage">
       <div class="content-center text-center w-full h-full bghead">
+        <!-- <img src="assets/images/bg-1.png" alt="" class="absolute h-[100vh] object-center object-cover w-[100%] opacity-[0.5px] sm:hidden"> -->
         <video
           class="absolute h-[100vh] object-center object-cover w-[100%]"
           autoplay
@@ -111,27 +128,35 @@
           <source src="./assets/videos/homepage.mp4" type="video/mp4" />
         </video>
 
-        <div class="positivity">
-          <span
-            class="poppins-bold positivity__alone md:text-[3rem] text-[1rem]"
-            >Choose your</span
-          >
+        <div id="nme-text" class="positivity">
           <div class="poppins-extrabold positivity__words">
-            <span class="change text-[2rem] md:text-[8rem]"
-              ><span class="text-[#8dddf1]">d</span>ream</span
+            <span class="chang text-[4rem] md:text-[8rem]"
+              ><span class="text-[white]">NME </span
+              ><span class="text-[#8dddf1]">360</span></span
             >
-            <span class="change text-[2rem] md:text-[8rem]"
-              ><span class="text-[#c3e47b]">s</span>uccess</span
+          </div>
+        </div>
+
+        <div id="choose-your" class="positivity hidden h-full content-center">
+          <div class="poppins-extrabold positivity__words h-fit">
+            <span
+              class="poppins-bold positivity__alone md:text-[3rem] text-[1rem]"
+              >Choose your</span
             >
-            <span class="change text-[2rem] md:text-[8rem]"
-              ><span class="text-[#ebe294]">p</span>assion</span
-            >
-            <span class="change text-[2rem] md:text-[8rem]"
-              ><span class="text-[#eeac51]">f</span>uture</span
-            >
-            <span class="change text-[2rem] md:text-[8rem]"
-              ><span class="text-[#e7606f]">p</span>urpose</span
-            >
+            <div class="poppins-extrabold positivity__words">
+              <span class="change text-[4rem] md:text-[8rem]"
+                ><span class="text-[#8dddf1]">d</span>ream</span
+              >
+              <span class="change text-[4rem] md:text-[8rem]"
+                ><span class="text-[#c3e47b]">s</span>uccess</span
+              >
+              <span class="change text-[4rem] md:text-[8rem]"
+                ><span class="text-[#ebe294]">p</span>assion</span
+              >
+              <span class="change text-[4rem] md:text-[8rem]"
+                ><span class="text-[#eeac51]">f</span>uture</span
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +172,7 @@
             <div class="w-full mx-auto">
               <div class="main">
                 <h2
-                  class=" poppins-extrabold first letter text-[40px] md:text-[70px] lg:text-[150px]"
+                  class="poppins-extrabold first letter text-[40px] md:text-[70px] lg:text-[150px]"
                 >
                   WHO WE ARE
                 </h2>
@@ -335,8 +360,10 @@
                 <span class="text-[#ffffff]"
                   >You're not just clients, you're a vital part of our
                   team</span
-                >-<span class="text-[]">where success is our mission, and we make sure the journey is
-                both inspiring and rewarding.</span>
+                >-<span class="text-[]"
+                  >where success is our mission, and we make sure the journey is
+                  both inspiring and rewarding.</span
+                >
               </h1>
             </div>
             <!-- <div><img src="./assets/images/double-quotes.png " class="h-fit bg-[blue]" alt=""></div> -->
@@ -345,15 +372,12 @@
       </div>
     </section>
 
-
-
-     <section class="each-section h-full">
+    <section class="each-section h-full">
       <div id="whyus-all-section" class="md:flex service-box">
         <div class="card-us w-full md:w-1/2 sidebar">
           <div class="service-1 content-wrapper main-scrolling-div">
             <div class="title-1 gap-4 each-section content-center">
               <div class="heading-1">
-  
                 <video
                   autoplay
                   muted
@@ -371,7 +395,6 @@
 
             <div class="title-1 gap-4 each-section content-center">
               <div class="heading-1 fontfamily-extra-bold">
-
                 <h1 class="text-7xl mb-16 w-min heading-text text-[#8dddf1]">
                   E
                 </h1>
@@ -380,16 +403,15 @@
                 </h1>
               </div>
               <p class="para-1 text-xl md:text-[24px] fontfamily-light">
-                Our experienced team of professionals brings extensive 
-                knowledge and experience in IT solutions, ensuring we 
-                stay ahead of industry trends and deliver innovative 
-                services designed to your needs.
+                Our experienced team of professionals brings extensive knowledge
+                and experience in IT solutions, ensuring we stay ahead of
+                industry trends and deliver innovative services designed to your
+                needs.
               </p>
             </div>
 
             <div class="title-1 gap-3 each-section content-center">
               <div class="heading-1 fontfamily-extra-bold">
-
                 <h1 class="text-7xl mb-16 w-min heading-text text-[#c3e47b]">
                   C
                 </h1>
@@ -398,65 +420,55 @@
                 </h1>
               </div>
               <p class="para-1 text-xl md:text-[24px] fontfamily-light">
-                From designing and branding to web designing and 
-                digital marketing, we provide a comprehensive range of 
-                services that cover all aspects of your digital presence.
+                From designing and branding to web designing and digital
+                marketing, we provide a comprehensive range of services that
+                cover all aspects of your digital presence.
               </p>
             </div>
 
-
-            <div class="title-1 gap-3 hidden lg:block  each-section content-center">
-            
-
+            <div
+              class="title-1 gap-3 hidden lg:block each-section content-center"
+            >
               <!-- web -->
-              <div class="heading-1 fontfamily-extra-bold ">
+              <div class="heading-1 fontfamily-extra-bold">
+                <h1 class="text-7xl w-min heading-text text-[#e7606f]">P</h1>
+                <div class="mb-16">
+                  <h1 class="text-5xl w-min heading-text mt-3">roven</h1>
+                  <h1 class="text-5xl w-fit heading-text mt-3">Track Record</h1>
+                </div>
+              </div>
 
-                <h1 class="text-7xl w-min heading-text text-[#e7606f]">
+              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
+                With over 1,500+ active clients and more than 1,800+ successful
+                projects, our reputation speaks for itself. We have a history of
+                delivering results that drive growth and success for businesses
+                of all sizes.
+              </p>
+            </div>
+
+            <div
+              class="title-1 gap-3 block lg:hidden each-section content-center"
+            >
+              <!-- mobile -->
+              <div class="heading-1 fontfamily-extra-bold">
+                <h1 class="text-7xl mb-16 w-min heading-text text-[#e7606f]">
                   P
                 </h1>
-                <div class="mb-16">
-                <h1 class="text-5xl  w-min heading-text mt-3">
-                  roven
+                <h1 class="text-5xl mb-16 w-min heading-text mt-3">
+                  roven Track Record
                 </h1>
-                <h1 class="text-5xl  w-fit heading-text mt-3">
-              Track Record
-                </h1>
-              </div>
               </div>
 
               <p class="para-1 text-xl md:text-[24px] fontfamily-light">
-                With over 1,500+ active clients and more than 1,800+ 
-                successful projects, our reputation speaks for itself. We 
-                have a history of delivering results that drive growth and 
-                success for businesses of all sizes.
-              </p>
-            </div>
-
-
-          
-            <div class="title-1 gap-3 block lg:hidden each-section content-center">
-               <!-- mobile --> 
-          <div class="heading-1 fontfamily-extra-bold">
-
-            <h1 class="text-7xl mb-16 w-min heading-text text-[#e7606f]">
-              P
-            </h1>
-            <h1 class="text-5xl mb-16 w-min heading-text mt-3">
-              roven Track Record
-            </h1>
-          </div>
-
-              <p class="para-1 text-xl md:text-[24px] fontfamily-light">
-                With over 1,500+ active clients and more than 1,800+ 
-                successful projects, our reputation speaks for itself. We 
-                have a history of delivering results that drive growth and 
-                success for businesses of all sizes.
+                With over 1,500+ active clients and more than 1,800+ successful
+                projects, our reputation speaks for itself. We have a history of
+                delivering results that drive growth and success for businesses
+                of all sizes.
               </p>
             </div>
 
             <div class="title-1 gap-3 each-section content-center">
               <div class="heading-1 fontfamily-extra-bold">
-
                 <h1 class="text-7xl mb-16 w-min heading-text text-[#ebe294]">
                   C
                 </h1>
@@ -465,10 +477,9 @@
                 </h1>
               </div>
               <p class="para-1 text-xl md:text-[24px] fontfamily-light">
-                We believe in delivering high-quality solutions that are 
-                not only effective but also reliable. Our rigorous quality 
-                assurance processes
-                needs.
+                We believe in delivering high-quality solutions that are not
+                only effective but also reliable. Our rigorous quality assurance
+                processes needs.
               </p>
             </div>
           </div>
@@ -559,7 +570,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
     <!-- flipping section - why us -->
 
@@ -676,7 +687,6 @@
       </div>
     </section> -->
 
-
     <!-- video section -->
 
     <!-- <section class="each-section v-sec-outer">
@@ -689,6 +699,160 @@
         </video>
       </div>
     </section> -->
+
+    <section class="each-section scrollable justify-items-center">
+      <div
+        class="service-provide-header w-full justify-items-center text-white sm:pt-40 pt-[7rem] sm:text-7xl text-5xl poppins-extrabold capitalize"
+      >
+        <h1>our services</h1>
+      </div>
+      <div
+        class="provide-services grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 sm:mt-[5rem] mt-[3rem] pb-[5rem] lg:w-[90%] w-[80%] gap-[40px] justify-center"
+      >
+        <div
+          class="provide-cards relative bg-[tranparent] border-solid border-white-600 border border-[#43c5eb87] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2 group transition-all"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/web.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+          >
+            <h3>web development</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards relative bg-[tranparent] border-solid border-white-600 border border-[#de329869] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit group hover:border-2"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/app.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+          >
+            <h3>app development</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards relative group bg-[tranparent] border-solid border-white-100 border border-[#e6db684f] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/uiux.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+          >
+            <h3>ui/ux development</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards relative group bg-[tranparent] border-solid border-white-600 border border-[#ffffff5c] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/seo.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+          >
+            <h3>SEO</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards relative group bg-[tranparent] border-solid border-white-600 border border-[#abd56263] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2"
+        >
+          <div class="provide-images">
+            <div class="container-card bg-yellow-box">
+              <img
+                src="./assets/images/digital marketing.png"
+                alt=""
+                width="80"
+                height="80"
+                class="group-hover:w-[90px] transition-all"
+              />
+            </div>
+            <div
+              class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+            >
+              <h3>digital marketing</h3>
+            </div>
+          </div>
+        </div>
+        <div
+          class="provide-cards relative group bg-[tranparent] border-solid border-white-600 border border-[#eba43e4f] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/branding.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolutexl:bottom-10 bottom-3 pr-[5px] capitalize poppins-bold"
+          >
+            <h3>branding and designing</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards group relative bg-[tranparent] border-solid border-white-600 border border-[#811a227a] rounded-xl sm:px-[50px] sm:py-[60px] px-[10px] pb-[100px] pt-[50px] cursor-pointer sm:h-[250px] h-fit hover:border-2"
+        >
+          <div class="provide-images">
+            <img
+              src="./assets/images/software.png"
+              alt=""
+              width="80"
+              height="80"
+              class="group-hover:w-[90px] transition-all"
+            />
+          </div>
+          <div
+            class="provide-head text-white text-3xl absolute xl:bottom-10 bottom-3 capitalize poppins-bold"
+          >
+            <h3>software installation</h3>
+          </div>
+        </div>
+        <div
+          class="provide-cards group relative bg-[tranparent] border-solid px-[70px] sm:py-[60px] pt-[4px] pl-[33px] pr-[38px] pb-[40px] cursor-pointer"
+        >
+          <a href="services.html">
+            <div
+              class="provide-head text-[grey] text-[35px] capitalize font-bold"
+            >
+              <h3>
+                explore our all services
+                <i class="fa fa-arrow-right arrow3" aria-hidden="true"></i>
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="each-section">
       <div class="h-[100vh] scrollable w-full relative" id="globe">
@@ -814,7 +978,9 @@
                   <img src="./assets/images/ticket new.png" alt="" />
                 </div>
                 <div class="content">
-                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                  <h2
+                    class="text-white text-4xl text-center montserrat-alternates-semibold"
+                  >
                     Ticket booking
                   </h2>
                 </div>
@@ -832,7 +998,9 @@
                   <img src="./assets/images/eiffel_tower-removebg.png" alt="" />
                 </div>
                 <div class="content">
-                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                  <h2
+                    class="text-white text-4xl text-center montserrat-alternates-semibold"
+                  >
                     Tourism
                   </h2>
                 </div>
@@ -850,7 +1018,9 @@
                   <img src="./assets/images/car new.png" alt="" class="flex" />
                 </div>
                 <div class="content">
-                  <h2 class="text-white  text-4xl text-center montserrat-alternates-semibold">
+                  <h2
+                    class="text-white text-4xl text-center montserrat-alternates-semibold"
+                  >
                     Cab booking
                   </h2>
                   <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
@@ -860,10 +1030,6 @@
           </div>
         </div>
 
-
-
-
-
         <div class="footer w-[100%] overflow-hidden" id="footer">
           <div class="container-fluid">
             <div
@@ -871,25 +1037,32 @@
             >
               <div class="footer-address">
                 <p class="text-[27px]">
-                  Carnival Infopark Phase I <br> Infopark Campus<br>  Kakkanad, Kochi<br> Kerala 682030
+                  Carnival Infopark Phase I <br />
+                  Infopark Campus<br />
+                  Kakkanad, Kochi<br />
+                  Kerala 682030
                 </p>
                 <h3 class="mt-[3rem] sm:text-3xl font-bold text-[17px]">
                   we are also in
                 </h3>
-                <p class="mt-[1rem] text-[20px]">Thiruvananthapuram, Pondichery<br/>
-                  Coimbatore,Chennai, Bengaluru<br/>
-                  Dubai, Qatar, Oman</p>
+                <p class="mt-[1rem] text-[20px]">
+                  Thiruvananthapuram, Pondichery<br />
+                  Coimbatore,Chennai, Bengaluru<br />
+                  Dubai, Qatar, Oman
+                </p>
               </div>
 
               <div class="footer-sociallinks">
                 <p class="facebook">
-                  <a href="https://www.facebook.com/profile.php?id=61567136343029&mibextid=ZbWKwL"
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61567136343029&mibextid=ZbWKwL"
                     >facebook
                     <i class="fa fa-arrow-right arrow1" aria-hidden="true"></i
                   ></a>
                 </p>
                 <p class="instagram">
-                  <a href="https://www.instagram.com/n_me360?igsh=MWRtdDVsZzB2aDFoeA=="
+                  <a
+                    href="https://www.instagram.com/n_me360?igsh=MWRtdDVsZzB2aDFoeA=="
                     >instagram
                     <i class="fa fa-arrow-right arrow2" aria-hidden="true"></i
                   ></a>
@@ -924,7 +1097,7 @@
               <div class="copy">
                 <p>
                   <i class="fa fa-copyright" aria-hidden="true"></i> 2024
-                  nme-360.  powerd by nme-360 team
+                  nme-360. powerd by nme-360 team
                 </p>
               </div>
             </div>
@@ -933,12 +1106,6 @@
 
           </div> -->
         </div>
-
-
-
-
-
-        
       </div>
     </section>
 

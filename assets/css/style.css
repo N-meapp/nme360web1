@@ -847,7 +847,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 27px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
   }
   .footer-sociallinks i{
     display: none;
@@ -1209,6 +1209,9 @@
   
   .newsletter-input i{
     padding-top: 0px;
+  }
+  #myVideo{
+    display: none;
   }
   }
   

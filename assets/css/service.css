@@ -891,7 +891,7 @@
     font-weight: 100;
     font-style: normal;
     font-size: 27px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
   }
   .footer-sociallinks i{
     display: none;
@@ -2779,7 +2779,7 @@
   }
   
   .BeforeScroll {
-    font-size: 42px;
+    font-size: 23px;
   }
   
   .footer-address, .footer-sociallinks  {
@@ -2840,7 +2840,7 @@
     font-size: 15px !important;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: -280px;
+    margin-top: -323px;
   }
   .domore {
     padding-top: 10rem  !important;
